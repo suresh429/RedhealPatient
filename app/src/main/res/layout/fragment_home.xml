@@ -1,0 +1,594 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ColorBackground"
+    app:layout_behavior="com.medoske.www.redhealpatient.Utilities.FixedScrollingViewBehavior"
+    tools:context="com.medoske.www.redhealpatient.Fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cardview:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/searchLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/searchimage"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_action_search" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/searchimage"
+                        android:text="What are you looking for ?" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@android:color/white"
+            >
+
+            <ss.com.bannerslider.views.BannerSlider
+                android:id="@+id/banner_slider1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:animateIndicators="true"
+                app:defaultIndicators="circle"
+                app:interval="4000"
+                app:loopSlides="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="0.35"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.11"
+                    android:id="@+id/doctor">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/tools"
+                        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/home_posts3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardUseCompatPadding="true"
+                        cardview:cardBackgroundColor="#ffffff"
+                        cardview:cardCornerRadius="2dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/appointment_Layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/doctorImageCard"
+                                android:src="@drawable/calladoctor"
+                                android:padding="8dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_toStartOf="@+id/textView2" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="Call A Doctor"
+                                android:textSize="26sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"/>
+
+                            <!-- <TextView
+                                 android:id="@+id/textView2"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:singleLine="false"
+                                 android:text="Call A Doctor"
+                                 android:textAlignment="gravity"
+                                 android:textAppearance="?android:attr/textAppearanceSmall"
+                                 android:textSize="20dp"
+                                 android:layout_centerVertical="true"
+                                 android:layout_centerHorizontal="true"
+                                 android:textColor="#2a2929" />-->
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="0.35"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.11"
+                    android:id="@+id/diagnostics_Layout"
+                    android:layout_marginRight="2dp">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/tools"
+                        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/home_posts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        cardview:cardBackgroundColor="#ffffff"
+                        cardview:cardCornerRadius="2dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardElevation="1dp"
+
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/reports_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:src="@drawable/diagnostics"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/imageView26" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imageView26"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/textView4"
+                                android:text="Diagnostics"
+                                android:textSize="16sp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <!-- <TextView
+                                 android:id="@+id/textView4"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:text="Diagnostics"
+                                 android:textAlignment="gravity"
+                                 android:textAppearance="?android:attr/textAppearanceSmall"
+                                 android:textSize="20dp"
+                                 android:layout_centerVertical="true"
+                                 android:layout_centerHorizontal="true"
+                                 android:textColor="#2a2929" />-->
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.11"
+                    android:padding="5dp"
+                    android:id="@+id/locationLayout">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/tools"
+                        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/home_posts5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        card_view:contentPadding="10dp"
+                        cardview:cardBackgroundColor="#ffffff"
+                        cardview:cardCornerRadius="5dp"
+                        cardview:cardElevation="3dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/locations_image"
+                                android:alpha="0.70"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/textView5sf2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Locations"
+                                android:textAlignment="gravity"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="16dp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="#2a2929" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>-->
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.11"
+                    android:id="@+id/feeds_layout"
+                    android:layout_marginLeft="2dp">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/tools"
+                        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/home_posts1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        cardview:cardBackgroundColor="#ffffff"
+                        cardview:cardCornerRadius="2dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardElevation="1dp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/emergency_Layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:src="@drawable/healthfeed"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/imageView27" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imageView27"
+                                android:layout_centerHorizontal="true"
+                                android:text="Feeds"
+                                android:textSize="16sp"
+                                android:id="@+id/textView6"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <!-- <TextView
+                                 android:id="@+id/textView6"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:text="Feeds"
+                                 android:textAlignment="gravity"
+                                 android:textAppearance="?android:attr/textAppearanceSmall"
+                                 android:textSize="20dp"
+                                 android:layout_centerVertical="true"
+                                 android:layout_centerHorizontal="true"
+                                 android:textColor="#2a2929" />-->
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:padding="3dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/viewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="MORE"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewCurrentscheduled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Current Scheduled"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <!-- <ss.com.bannerslider.views.BannerSlider
+                     android:id="@+id/banner_slider2"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     app:animateIndicators="true"
+                     app:defaultIndicators="circle"
+                     app:interval="5000"
+                     app:loopSlides="true" />-->
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:padding="3dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/viewAll2"
+                        android:layout_gravity="right"
+                        android:text="MORE"
+                        android:textSize="10sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewTopspeclities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Top Specialities"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cardViewTopSpecilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:padding="3dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/viewAll3"
+                        android:layout_gravity="right"
+                        android:text="MORE"
+                        android:textSize="10sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewalternate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Alternate Treatments"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cardViewAlternate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:padding="3dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/viewAll4"
+                        android:layout_gravity="right"
+                        android:text="MORE"
+                        android:textSize="10sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewSeasonal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Seasonal Recommendation"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"/>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cardViewRecommendation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.medoske.www.redhealpatient"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
+}
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+    repositories {
+
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+
+
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    compile 'org.apache.httpcomponents:httpmime:4.2.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.ss.bannerslider:bannerslider:1.6.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.devlight:infinitecycleviewpager:1.0.2'
+    compile 'com.github.Yalantis:SearchFilter:v1.0.4'
+    compile 'com.facebook.fresco:fresco:0.13.0'
+    compile 'com.google.android.gms:play-services:9.4.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.github.ivbaranov:materialfavoritebutton:0.1.4'
+    compile 'com.github.barteksc:android-pdf-viewer:2.5.1'
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    compile 'com.github.akashandroid90:imageletter:1.8@aar'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    testCompile 'junit:junit:4.12'
+}
+
+android {
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    // apply plugin: 'com.google.gms.google-services'
+}
+apply plugin: 'com.google.gms.google-services'

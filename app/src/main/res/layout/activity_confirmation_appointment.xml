@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.medoske.www.redhealpatient.ConfirmationAppointmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#43b9b9b9">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textPatientNae1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:textSize="16sp"/>
+
+       <!-- <TextView
+            android:id="@+id/textClinicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textDoctorName"
+            android:layout_below="@+id/textDoctorName"
+            android:text="TextView" />-->
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_action_clinic" />
+
+        <TextView
+            android:id="@+id/textClinicName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imageView21" />
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textClinicName"
+            android:layout_below="@+id/textClinicName"
+            android:text="TextView"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_action_time" />
+
+        <TextView
+            android:id="@+id/textDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/textPaymentMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textDateTime"
+            android:layout_below="@+id/textDateTime"
+            android:text="TextView"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView211212"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_action_user" />
+
+        <TextView
+            android:id="@+id/textViewCenterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imageView211212" />
+
+        <TextView
+            android:id="@+id/textMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewCenterName"
+            android:layout_below="@+id/textViewCenterName"
+            android:text="TextView"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_action_pin" />
+
+        <TextView
+            android:id="@+id/textRefernceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/imageView9"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider"></include>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/buttonProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Proceed"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+</RelativeLayout>

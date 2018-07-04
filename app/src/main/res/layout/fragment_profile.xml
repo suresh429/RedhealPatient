@@ -1,0 +1,390 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ColorBackground"
+    tools:context="com.medoske.www.redhealpatient.Fragments.ProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="55dp"
+            app:cardCornerRadius="5dp"
+            android:padding="5dp"
+            android:id="@+id/cardView">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/labreportImage"
+                android:src="@drawable/doctor_image"/>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/textViewPatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Suresh"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_below="@+id/textEdit"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="160dp" />
+
+            <TextView
+                android:id="@+id/textViewRhId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textViewPatientName"
+                android:layout_below="@+id/textViewPatientName"
+                android:text="Rh1234567"
+                android:textColor="@android:color/white"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:id="@+id/textViewMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textViewRhId"
+                android:layout_below="@+id/textViewRhId"
+                android:text="8985101010"
+                android:textColor="@android:color/white"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:id="@+id/textEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                android:text="Edit"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cardView"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="My Folders"
+            android:textColor="@android:color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView35"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/ColorGray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/appointment_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewAppointments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="Appointments" />
+            </LinearLayout>
+
+            <!--<View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="right"
+                android:background="@color/ColorGray"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/packages_icon" />
+
+                <TextView
+                    android:id="@+id/textViewPackages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="Packages" />
+            </LinearLayout>
+
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="60dp"
+                android:background="@color/ColorGray"/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/savedfeeds_icon" />
+
+                <TextView
+                    android:id="@+id/textViewSavedFeeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saved Feeds"
+                    android:padding="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true" />
+            </LinearLayout>
+
+
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="60dp"
+                android:background="@color/ColorGray"/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/myfamily_icon" />
+
+                <TextView
+                    android:id="@+id/textViewMyFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Family"
+                    android:padding="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true" />
+            </LinearLayout>
+
+
+
+
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="60dp"
+                android:background="@color/ColorGray"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/mydoctors_icon" />
+
+                <TextView
+                    android:id="@+id/textViewMyDoctors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Doctors"
+                    android:padding="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true" />
+            </LinearLayout>
+
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ColorGray"/>-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView35"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="5dp"
+            android:text="Records"
+            android:textColor="@android:color/black"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView46"
+            android:background="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout4">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/myrecords_icon" />
+
+                <TextView
+                    android:id="@+id/textViewMyRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Records"
+                    android:padding="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true" />
+            </LinearLayout>
+
+
+
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ColorGray"
+                android:layout_marginLeft="60dp"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/myrecords_icon" />
+
+                <TextView
+                    android:id="@+id/textViewMyLabRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Lab Reports"
+                    android:padding="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView46"
+            android:layout_below="@+id/linearLayout4"
+            android:text="Best Packages"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView50"
+            android:background="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout5">
+
+
+            <ListView
+                android:id="@+id/listPackages1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewAll"
+                android:text="more"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="right"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/LinearLayoutAppointment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/linearLayout6"
+                android:orientation="vertical"
+                android:layout_weight="0.1">
+
+                <TextView
+                    android:id="@+id/txtDoctorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/txtDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:id="@+id/noteLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/infoImage"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/ic_action_info" />
+
+                    <TextView
+                        android:id="@+id/txtNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="TextView"
+                        android:textColor="@android:color/black"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout6"
+                android:layout_weight="0.44">
+
+                <TextView
+                    android:id="@+id/txtPcci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="txtPcci"
+                    android:textSize="8dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/black"
+                     />
+
+                <ImageView
+                    android:id="@+id/patientImage1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right"/>
+
+
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:layout_gravity="right"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+
+                <Button
+                    android:id="@+id/button_getDirections"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:text="Get Direction"
+                    android:textSize="12sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <Button
+                    android:id="@+id/button_cancelAppointments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:text="Cancel Appointment"
+                    android:textSize="12sp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

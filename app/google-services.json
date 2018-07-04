@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "493826351073",
+    "firebase_url": "https://redheal-405c8.firebaseio.com",
+    "project_id": "redheal-405c8",
+    "storage_bucket": "redheal-405c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493826351073:android:1c17347178cedac6",
+        "android_client_info": {
+          "package_name": "com.medoske.www.redhealpatient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493826351073-67odcemn5td5rfar4vic1lai25bv36iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm6pQ1yOXJbt4lAhUrg75WlIreCO_nbTE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

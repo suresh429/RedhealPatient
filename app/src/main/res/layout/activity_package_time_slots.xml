@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.medoske.www.redhealpatient.PackageTimeSlotsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/lib/com.app.chasebank"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_action_placeholder"
+            app:civ_border_colo="#c5c8c7c7"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/textPatientNae1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:layout_toRightOf="@+id/profile_image"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textRhid1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textPatientNae1"
+            android:layout_alignStart="@+id/textPatientNae1"
+            android:layout_below="@+id/textPatientNae1"
+            android:text="TextView" />
+
+    </RelativeLayout>
+    <include layout="@layout/item_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <ImageButton
+            android:id="@+id/PreviousButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_left" />
+
+        <TextView
+            android:id="@+id/textDateSlot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="Time Slots" />
+
+        <ImageButton
+            android:id="@+id/ForwardButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_right" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider"/>
+
+    <LinearLayout
+        android:id="@+id/normalLiniearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <GridView
+            android:id="@+id/gridMorning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="4" />
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.medoske.www.redhealpatient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_GPS" /> -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+
+
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,icon,theme,label">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BottomMenuActivity"
+            android:label="@string/title_activity_bottom_menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DoctorNotifyDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmBookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmationTicketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DoctorsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimeSlotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DoctorsProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeClinic" />
+        <activity
+            android:name=".FeedsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectClinicACtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClinicProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeClinic" />
+        <activity
+            android:name=".PackagEnterDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmationAppointmentActivity"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PackagesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FeedsActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClinicProfileActivity1"
+            android:label="@string/title_activity_clinic_profile1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AppointmentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CurrentAppointmentDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PastAppointmentDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPackagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPackageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MySavedFeedsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyFamilyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyDoctorsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddFamilyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyLabRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyLabReportDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EditProfileActivity" />
+
+        <service android:name=".GPSTracker.GPSTracker" />
+
+        <activity
+            android:name=".AllBestPackagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BookPackageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PackageTimeSlotsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterContactDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PackageConfirmDetailsACtivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".Utilities.MySuggestionProvide"
+            android:authorities="com.example.MySuggestionProvider" />
+
+        <activity
+            android:name=".AddFamilyActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CancelAppointmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DiagnosticsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".CategoeryFilterActivity"></activity>
+    </application>
+
+</manifest>

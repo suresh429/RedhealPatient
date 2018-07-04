@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item
+        android:id="@+id/navigation_lab"
+        android:title="Lab Reports" />-->
+
+     <item
+         android:id="@+id/navigation_settings"
+         android:title="Settings" />
+
+    <item
+        android:id="@+id/navigation_feedback"
+        android:title="FeedBack" />
+
+    <item
+        android:id="@+id/navigation_about"
+        android:title="About Us" />
+
+    <item
+        android:id="@+id/navigation_signout"
+        android:title="Signout" />
+
+</menu>

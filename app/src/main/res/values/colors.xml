@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#06a3b8</color>
+    <color name="colorPrimaryDark">#008394</color>
+    <color name="colorAccent">#fa6055</color>
+
+    <color name="buttonColor">#fa6055</color>
+
+    <color name="ColorText">#ffffff</color>
+    <color name="ColorTextHint">#898888</color>
+
+    <color name="ColorGray">#a0898888</color>
+
+    <color name="ColorBackground">#5af2f2f2</color>
+
+    <color name="ColorTransperent">#00f9f8f8</color>
+
+    <color name="slotBackground" type="color">#bcbcbc</color>
+
+    <array name="colors">
+        <item name="all" type="color">#827f93</item>
+        <item name="Skin &amp; Hair Care" type="color">#c467f4</item>
+        <item name="Mental Well-Being" type="color">#3b9aee</item>
+        <item name="Chronic Conditions" type="color">#9bc53d</item>
+        <item name="Pain Management" type="color">#f4a261</item>
+        <item name="Healthy Teeth" type="color">#1ed2bb</item>
+        <item name="Pregnancy, Kids &amp; Parenting" type="color">#778da9</item>
+        <item name="General Health" type="color">#20bf55</item>
+        <item name="Nutrition &amp; Diet" type="color">#9f9fed</item>
+        <item name="Fitness &amp; Exercise" type="color">#fc6177</item>
+        <item name="Weight Management" type="color">#c467f4</item>
+        <item name="other" type="color">#bcbcbc</item>
+    </array>
+
+    <color name="divider">#b2b6c6</color>
+</resources>
